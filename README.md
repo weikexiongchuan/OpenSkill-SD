@@ -9,10 +9,21 @@
 - 准备 LoRA 训练配置、底模、数据集与诊断材料
 - 辅助 SDXL / LoRA base 选型
 
+## 适合谁用
+- 想把 AutoDL 上的 ComfyUI / LoRA 训练流程整理成可复用 skill 的人
+- 想把“场景编排”和“原子能力”拆开维护的人
+- 想让 agent 在低 token 成本下稳定命中正确技能入口的人
+
 ## 怎么开始
 - 如果你的目标是一个完整场景，比如“部署 ComfyUI”或“恢复训练环境”，从 `docs/SKILL_INDEX.md` 开始。
 - 如果你要找一个精确动作，比如“SSH 连接”、“状态记录”或“启动训练任务”，从 `docs/FUNCTION_INDEX.md` 开始。
 - 进入对应条目后，再按需读取单个 `SKILL.md`、`references/` 或 `scripts/`。
+
+## 推荐使用路径
+1. 先在 `README.md` 了解仓库范围。
+2. 宽泛目标走 `docs/SKILL_INDEX.md`。
+3. 精确动作走 `docs/FUNCTION_INDEX.md`。
+4. 命中后只进入一个目标 skill，再按需读取 `references/` 或执行 `scripts/`。
 
 ## 设计特点
 - 低 token：优先走“入口索引 -> 单个 skill -> 按需 reference / script”的渐进式加载。
@@ -24,3 +35,10 @@
 - `l2/`：面向用户场景的编排 skill
 - `l3/`：可直接执行的原子能力 skill
 - `docs/`：用户导航索引
+
+## 当前覆盖范围
+- AutoDL 远端服务器接入、状态记录与远端工作区初始化
+- ComfyUI 部署、启动、恢复、访问方式选择与常见排障
+- `lora-scripts` 部署、启动、Web API 训练任务与状态记录
+- LoRA 训练底模下载、数据集准备、样图提示词准备、配置定稿与训练诊断
+- SDXL 生态底模对比与 LoRA base 选择建议
