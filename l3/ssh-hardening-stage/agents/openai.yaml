@@ -1,0 +1,4 @@
+interface:
+  display_name: "SSH Hardening Stage"
+  short_description: "Atomic staged sshd hardening after key login"
+  default_prompt: "Use $ssh-hardening-stage for dry-run or apply of SSH daemon hardening after key-based access is confirmed."

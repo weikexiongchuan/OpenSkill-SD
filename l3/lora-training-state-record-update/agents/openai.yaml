@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA Training State Record"
+  short_description: "Update local markdown records for LoRA training runs"
+  default_prompt: "Use $lora-training-state-record-update when a lora-scripts training run must be registered or refreshed in the local server workspace under training/lora.md."

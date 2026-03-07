@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoDL Host Facts Collect"
+  short_description: "Atomic GPU, storage, mount, and screen fact capture"
+  default_prompt: "Use $autodl-host-facts-collect to capture a one-shot host facts snapshot from an AutoDL server."

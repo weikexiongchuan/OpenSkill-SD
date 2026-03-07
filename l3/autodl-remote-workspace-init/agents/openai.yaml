@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoDL Remote Workspace Init"
+  short_description: "Atomic initialization of remote AutoDL workspace layout"
+  default_prompt: "Use $autodl-remote-workspace-init to create the standard remote AutoDL workspace structure and server.env file."

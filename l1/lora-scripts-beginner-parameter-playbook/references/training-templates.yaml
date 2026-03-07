@@ -1,0 +1,117 @@
+# lora-scripts beginner training templates
+# 这是一份给场景层读取的模板目录，默认先给模板，不先展开复杂参数解释。
+# 后续新增模板时，优先追加条目，不要改已有 id。
+# `positioning` 用来表达模板偏好，不再使用含糊的“稳妥”。
+# `watchouts` 只写最常见的简短问题，不展开成长说明书。
+# 默认展示顺序：先 `保守起手`，再 `标准推荐`。
+# 模板层默认统一按高质量优先，`resolution` 固定走 `1024` 面积。
+# `default_for_scene: true` 表示当前场景下的默认推荐模板；若用户只回“开始”，优先用它。
+
+templates:
+  - id: sdxl-style-conservative-v1
+    label: 画风模板（保守起手）
+    scene: style
+    family: sdxl-lora
+    positioning: 保守起手
+    default_for_scene: true
+    summary: 先学整体风格和色调，不追求第一版就学满
+    starter:
+      resolution: "1024,1024"
+      network_dim: 16
+      network_alpha: 8
+      network_train_unet_only: true
+      train_batch_size: 1
+      max_train_epochs: "6~8"
+      unet_lr: "1e-4"
+      text_encoder_lr: "1e-5"
+      keep_tokens: 0
+      shuffle_caption: true
+    watchouts:
+      - 前几轮风格变化可能不明显
+      - 数据太杂时容易学不准整体调性
+
+  - id: sdxl-character-conservative-v1
+    label: 角色模板（保守起手）
+    scene: character
+    family: sdxl-lora
+    positioning: 保守起手
+    default_for_scene: true
+    summary: 先稳住角色脸和主特征，再决定要不要加训练强度
+    starter:
+      resolution: "1024,1024"
+      network_dim: 32
+      network_alpha: 16
+      network_train_unet_only: false
+      train_batch_size: 1
+      max_train_epochs: "8~10"
+      unet_lr: "1e-4"
+      text_encoder_lr: "1e-5"
+      keep_tokens: 1
+      shuffle_caption: true
+    watchouts:
+      - 触发词未必一次就很稳
+      - 数据不一致时角色脸还是会飘
+
+  - id: sdxl-style-v1
+    label: 画风模板（标准）
+    scene: style
+    family: sdxl-lora
+    positioning: 标准推荐
+    summary: 适合整体风格、笔触、色调训练
+    starter:
+      resolution: "1024,1024"
+      network_dim: 32
+      network_alpha: 16
+      network_train_unet_only: true
+      train_batch_size: 1
+      max_train_epochs: "8~10"
+      unet_lr: "1e-4"
+      text_encoder_lr: "1e-5"
+      keep_tokens: 0
+      shuffle_caption: true
+    watchouts:
+      - 风格会更明显，但过拟合风险也更高
+      - 数据风格太杂时容易学得不干净
+
+  - id: sdxl-character-v1
+    label: 角色模板（标准）
+    scene: character
+    family: sdxl-lora
+    positioning: 标准推荐
+    summary: 适合角色脸、发型、特征和触发词训练
+    starter:
+      resolution: "1024,1024"
+      network_dim: 32
+      network_alpha: 16
+      network_train_unet_only: false
+      train_batch_size: 1
+      max_train_epochs: "10~14"
+      unet_lr: "1e-4"
+      text_encoder_lr: "1e-5"
+      keep_tokens: 1
+      shuffle_caption: true
+    watchouts:
+      - 显存压力会比画风模板高
+      - 数据不一致时角色脸容易飘
+
+  - id: sdxl-outfit-v1
+    label: 服装配饰模板（标准）
+    scene: outfit-accessory
+    family: sdxl-lora
+    positioning: 标准推荐
+    default_for_scene: true
+    summary: 适合服装、发饰、眼镜、帽子等局部概念训练
+    starter:
+      resolution: "1024,1024"
+      network_dim: 16
+      network_alpha: 8
+      network_train_unet_only: true
+      train_batch_size: 1
+      max_train_epochs: "6~10"
+      unet_lr: "1e-4"
+      text_encoder_lr: "1e-5"
+      keep_tokens: 1
+      shuffle_caption: true
+    watchouts:
+      - 学到人物本体太多时，局部概念会变脏
+      - 数据裁切不干净时容易学偏

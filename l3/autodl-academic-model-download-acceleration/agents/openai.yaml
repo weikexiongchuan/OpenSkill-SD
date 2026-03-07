@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoDL Download Acceleration"
+  short_description: "Reusable network turbo and mirror download functions"
+  default_prompt: "Use $autodl-academic-model-download-acceleration for precise AutoDL download-acceleration tasks and proxy cleanup."

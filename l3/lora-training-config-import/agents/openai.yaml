@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 配置导入"
+  short_description: "Import one user-provided training config into local server workspace"
+  default_prompt: "Use $lora-training-config-import when the user already has a custom LoRA training config file and wants it imported into the local server workspace, registered for the target server, and clearly marked as manual-import."

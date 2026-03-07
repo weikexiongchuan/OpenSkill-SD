@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local State Record Update"
+  short_description: "Atomic updates to local server-state markdown records"
+  default_prompt: "Use $local-server-state-record-update to update state.md, login/method.md, and timeline entries in the local server-state workspace."

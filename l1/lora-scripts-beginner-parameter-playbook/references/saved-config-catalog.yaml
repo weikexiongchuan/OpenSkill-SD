@@ -1,0 +1,36 @@
+# saved config catalog
+# 归档用户给过的真实配置，便于后续对照、复盘和二次改模版。
+# 原始文件保存在 ../../assets/saved-configs/ 下。
+
+saved_configs:
+  - id: download-1770032441989
+    label: NoobAI 历史预设集
+    source_file: assets/saved-configs/1770032441989.json
+    file_type: json-history
+    presets:
+      - name: oaks16_noob_vpre
+        scene_guess: style
+        positioning: 激进吸收
+        effect: 高分辨率、长训练、强风格吸收
+        issues:
+          - 参数整体偏激，容易过拟合
+          - network_dim 数值异常，不适合作为默认模板
+
+      - name: licht_noob
+        scene_guess: style
+        positioning: 激进吸收
+        effect: 高分辨率风格吸收
+        issues:
+          - 训练强度仍然偏高
+          - v-pred 相关设置需要和底模口径一起核对
+
+  - id: download-1771447668697
+    label: Illustrious 角色配置
+    source_file: assets/saved-configs/1771447668697.toml
+    file_type: toml-config
+    scene_guess: character
+    positioning: 标准推荐
+    effect: 角色 / 主体 LoRA 的平衡起手档
+    issues:
+      - 关闭 bucket 时更适合近方图数据
+      - U-Net only 下触发词不一定最稳

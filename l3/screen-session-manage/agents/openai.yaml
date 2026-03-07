@@ -1,0 +1,4 @@
+interface:
+  display_name: "Screen Session Manage"
+  short_description: "Atomic start, stop, status, attach, and list for screen"
+  default_prompt: "Use $screen-session-manage for exact screen session lifecycle actions with named sessions and log files."

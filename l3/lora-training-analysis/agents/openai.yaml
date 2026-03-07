@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 训练分析"
+  short_description: "Analyze LoRA dataset quality and training runtime"
+  default_prompt: "Use $lora-training-analysis when the user wants a concrete diagnosis of one LoRA dataset or training run from the current AutoDL workspace. Read the active dataset, prepared config, run state, API status, logs, and TensorBoard event presence; keep confirmed issues separate from inference; and write the result back into training/analysis.md."

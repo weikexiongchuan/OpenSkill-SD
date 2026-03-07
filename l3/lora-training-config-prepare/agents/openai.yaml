@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 配置定稿"
+  short_description: "Bind base model and dataset to a training config and emit a runnable JSON"
+  default_prompt: "Use $lora-training-config-prepare when a LoRA training config already exists but still needs the current server's base model path, train data directory, output name, or output dir bound before API execution. If sample images should be generated during training, also bind the prepared sample prompt file and sample cadence here."

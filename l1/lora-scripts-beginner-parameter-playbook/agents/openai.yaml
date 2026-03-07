@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 参数入门"
+  short_description: "Beginner parameter guide for lora-scripts training"
+  default_prompt: "Use $lora-scripts-beginner-parameter-playbook when the user asks how to fill lora-scripts training parameters in a beginner-friendly way, wants a small-core parameter dictionary, needs starter values for 二次元 or 三次元 training, or needs starter values for style, character, or clothing/accessory LoRA training. Keep the answer concise, distinguish direct official facts from inferred beginner recipes, and hand off to l3/lora-scripts-api-training-task only after a final config is ready."

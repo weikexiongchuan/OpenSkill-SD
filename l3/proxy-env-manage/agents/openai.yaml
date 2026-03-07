@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proxy Env Manage"
+  short_description: "Atomic create or remove of workspace proxy env file"
+  default_prompt: "Use $proxy-env-manage to create or remove a .proxy_env file under a workspace root."

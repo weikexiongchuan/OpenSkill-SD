@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 样图提示词"
+  short_description: "Prepare sample-image prompts for LoRA training"
+  default_prompt: "Use $lora-training-sample-prompts-prepare when LoRA training should output sample images and you need to choose the prompt source between random dataset captions and user-provided prompts. Default to 3 sample images from random captions unless the user explicitly provides prompts."

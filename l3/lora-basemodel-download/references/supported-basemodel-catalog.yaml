@@ -1,0 +1,93 @@
+# Workspace-facing base model download slots for LoRA training.
+# Verified against official HuggingFace model pages on 2026-03-07.
+verified_on: "2026-03-07"
+default_download_mode: hf-mirror
+default_persistent_root: /autodl-fs/data/models
+default_runtime_link_root: /root/autodl-tmp/lora-scripts/app/sd-models
+families:
+  - family: noobai
+    display_name: NoobAI XL
+    require_version: true
+    require_branch: true
+    beginner_default_slot: noobai-xl-1.1-epsilon
+    compatibility_fallback_slot: noobai-xl-1.0-epsilon
+    slots:
+      - id: noobai-xl-1.1-epsilon
+        label: NoobAI XL 1.1
+        version: "1.1"
+        branch: epsilon
+        repo_id: Laxhar/noobai-XL-1.1
+        filename: NoobAI-XL-v1.1.safetensors
+        persistent_subdir: noobai-xl-1.1
+        runtime_filename: NoobAI-XL-v1.1.safetensors
+        note: 新手默认；优先使用。
+      - id: noobai-xl-1.0-epsilon
+        label: NoobAI XL 1.0
+        version: "1.0"
+        branch: epsilon
+        repo_id: Laxhar/noobai-XL-1.0
+        filename: NoobAI-XL-v1.0.safetensors
+        persistent_subdir: noobai-xl-1.0
+        runtime_filename: NoobAI-XL-v1.0.safetensors
+        note: 兼容回退。
+      - id: noobai-xl-0.5-epsilon
+        label: NoobAI XL 0.5
+        version: "0.5"
+        branch: epsilon
+        repo_id: Laxhar/noobai-XL-0.5
+        filename: NoobAI-XL-v0.5.safetensors
+        persistent_subdir: noobai-xl-0.5
+        runtime_filename: NoobAI-XL-v0.5.safetensors
+        note: 旧栈回退。
+      - id: noobai-xl-0.5-vpred
+        label: NoobAI XL Vpred 0.5
+        version: "0.5"
+        branch: vpred
+        repo_id: Laxhar/noobai-XL-Vpred-0.5
+        filename: NoobAI-XL-VPred-v0.5.safetensors
+        persistent_subdir: noobai-xl-vpred-0.5
+        runtime_filename: NoobAI-XL-VPred-v0.5.safetensors
+        note: 仅用于已有 v-pred 老栈。
+  - family: illustrious
+    display_name: Illustrious XL
+    require_version: true
+    require_branch: false
+    beginner_default_slot: illustrious-xl-1.1-standard
+    compatibility_fallback_slot: illustrious-xl-1.0-standard
+    slots:
+      - id: illustrious-xl-1.1-standard
+        label: Illustrious XL 1.1
+        version: "1.1"
+        branch: standard
+        repo_id: OnomaAIResearch/Illustrious-XL-v1.1
+        filename: Illustrious-XL-v1.1.safetensors
+        persistent_subdir: illustrious-xl-1.1
+        runtime_filename: Illustrious-XL-v1.1.safetensors
+        note: 新流程优先。
+      - id: illustrious-xl-1.0-standard
+        label: Illustrious XL 1.0
+        version: "1.0"
+        branch: standard
+        repo_id: OnomaAIResearch/Illustrious-XL-v1.0
+        filename: Illustrious-XL-v1.0.safetensors
+        persistent_subdir: illustrious-xl-1.0
+        runtime_filename: Illustrious-XL-v1.0.safetensors
+        note: 兼容回退。
+      - id: illustrious-xl-0.1-standard
+        label: Illustrious XL 0.1
+        version: "0.1"
+        branch: standard
+        repo_id: OnomaAIResearch/Illustrious-xl-early-release-v0
+        filename: Illustrious-XL-v0.1.safetensors
+        persistent_subdir: illustrious-xl-0.1
+        runtime_filename: Illustrious-XL-v0.1.safetensors
+        note: 早期版本；仅在旧栈里用。
+      - id: illustrious-xl-0.1-guided
+        label: Illustrious XL 0.1 Guided
+        version: "0.1"
+        branch: guided
+        repo_id: OnomaAIResearch/Illustrious-xl-early-release-v0
+        filename: Illustrious-XL-v0.1-GUIDED.safetensors
+        persistent_subdir: illustrious-xl-0.1-guided
+        runtime_filename: Illustrious-XL-v0.1-GUIDED.safetensors
+        note: Guided 变体；仅在旧工作流明确依赖时用。

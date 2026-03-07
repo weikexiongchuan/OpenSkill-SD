@@ -1,0 +1,56 @@
+# Workspace-facing NoobAI selection slots.
+# Verified against official HuggingFace pages on 2026-03-07.
+family: noobai-xl
+verified_on: "2026-03-07"
+selection_rule:
+  require_version: true
+  require_branch: true
+  beginner_default:
+    version: "1.1"
+    branch: epsilon
+    repo_id: Laxhar/noobai-XL-1.1
+  compatibility_fallback:
+    version: "1.0"
+    branch: epsilon
+    repo_id: Laxhar/noobai-XL-1.0
+workspace_slots:
+  - version: "1.1"
+    branch: epsilon
+    label: NoobAI XL 1.1
+    repo_id: Laxhar/noobai-XL-1.1
+    default_for_beginner: true
+    note: 新手默认；新流程优先。
+  - version: "1.0"
+    branch: epsilon
+    label: NoobAI XL 1.0
+    repo_id: Laxhar/noobai-XL-1.0
+    compatibility_fallback: true
+    note: 老流程兼容回退。
+  - version: "0.5"
+    branch: epsilon
+    label: NoobAI XL 0.5
+    repo_id: Laxhar/noobai-XL-0.5
+    legacy: true
+    note: 仅在已有 0.5 栈时选。
+  - version: "0.5"
+    branch: vpred
+    label: NoobAI XL Vpred 0.5
+    repo_id: Laxhar/noobai-XL-Vpred-0.5
+    legacy: true
+    note: 仅用于已有 v-pred 老栈。
+upstream_variants_seen:
+  - version: "0.9"
+    branch: vpred
+    repo_id: Laxhar/noobai-XL-Vpred-0.9
+  - version: "0.75s"
+    branch: vpred
+    repo_id: Laxhar/noobai-XL-Vpred-0.75s
+  - version: "0.75"
+    branch: vpred
+    repo_id: Laxhar/noobai-XL-Vpred-0.75
+  - version: "0.65s"
+    branch: vpred
+    repo_id: Laxhar/noobai-XL-Vpred-0.65s
+  - version: "0.65"
+    branch: vpred
+    repo_id: Laxhar/noobai-XL-Vpred-0.65

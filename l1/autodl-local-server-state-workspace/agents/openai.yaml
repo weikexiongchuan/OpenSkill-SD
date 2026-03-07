@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoDL Local State Workspace"
+  short_description: "Protocol for the canonical local server-state workspace"
+  default_prompt: "Use $autodl-local-server-state-workspace when you need the workspace schema, state files, or update rules for local AutoDL server records."

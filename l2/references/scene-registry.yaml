@@ -1,0 +1,17 @@
+# l2 scene registry
+# 只放用户级服务名与动作词，不放端口、隧道等底层术语。
+# “你能做什么”的回复从这里动态取服务清单与默认动作。
+# `acts` 用于第一句里的共性动作；`highlights` 用于第二句里的场景特有能力。
+# 新增 l2 场景时，补一条注册项；若不想出现在能力回复里，就不要注册。
+
+scenes:
+  - skill: autodl-comfyui-deploy-screen
+    name: ComfyUI
+    acts: [部署, 启动, 恢复]
+    extra: [重启, 打开可访问页面]
+
+  - skill: autodl-lora-scripts-deploy-screen
+    name: lora-scripts 训练界面
+    acts: [部署, 启动, 恢复]
+    extra: [重启, 打开可访问页面]
+    highlights: [LoRA 训练, 训练集上传和检查, 训练样图, 训练问题分析]

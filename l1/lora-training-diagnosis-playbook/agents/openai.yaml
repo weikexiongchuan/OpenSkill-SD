@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA 训练诊断"
+  short_description: "Official-source playbook for LoRA training diagnosis"
+  default_prompt: "Use $lora-training-diagnosis-playbook when the user asks why a LoRA run failed, why the training signal looks wrong, what data/config issue is most likely, or whether the dataset/caption style mismatches the chosen 二次元 or 三次元 base model. Keep confirmed facts separate from inference, prefer official upstream training docs and official model cards, and hand off to l3/lora-training-analysis when one concrete server run should be checked."

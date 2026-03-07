@@ -1,0 +1,4 @@
+interface:
+  display_name: "LoRA Basemodel Download"
+  short_description: "Resolve and record AutoDL LoRA base-model downloads"
+  default_prompt: "Use $lora-basemodel-download when the user wants to choose a supported LoRA base-model slot, construct an AutoDL download command, prefer HF mirror for HuggingFace sources, or record the selected/downloaded model into the current server workspace."

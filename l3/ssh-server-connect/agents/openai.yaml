@@ -1,0 +1,4 @@
+interface:
+  display_name: "SSH Server Connect"
+  short_description: "Atomic SSH connectivity and key bootstrap actions"
+  default_prompt: "Use $ssh-server-connect for SSH key creation, public-key bootstrap, password fallback SSH/SCP, and key-login verification."

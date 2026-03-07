@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDXL Base Selection"
+  short_description: "Compare SDXL families and choose a LoRA base"
+  default_prompt: "Use $sdxl-ecosystem-base-selection when you need model-family comparison or a base-model recommendation before training."
