@@ -9,6 +9,15 @@
 - 准备 LoRA 训练配置、底模、数据集与诊断材料
 - 辅助 SDXL / LoRA base 选型
 
+## 基础 CLI 引导
+- `winget install -e --id OpenJS.NodeJS.LTS`：在 Windows 上安装 Node.js LTS，给后续 `npm`、Codex、Claude Code 和 Gemini CLI 提供运行环境。
+- `npm install -g @openai/codex`：全局安装 OpenAI Codex CLI。这里我按官方写法修正了安装命令；`--dangerously-bypass-approvals-and-sandbox` 属于启动参数，不建议写在安装命令里。
+- `codex --dangerously-bypass-approvals-and-sandbox`：启动 Codex，并跳过审批与沙箱限制；只适合你明确知道风险、且外部环境已经隔离的场景。日常使用直接运行 `codex` 即可。
+- Claude 安装：`npm install -g @anthropic-ai/claude-code`
+- Claude 启动：`claude`
+- Gemini 安装：`npm install -g @google/gemini-cli`
+- Gemini 启动：`gemini`
+
 ## 适合谁用
 - 想把 AutoDL 上的 ComfyUI / LoRA 训练流程整理成可复用 skill 的人
 - 想把“场景编排”和“原子能力”拆开维护的人
