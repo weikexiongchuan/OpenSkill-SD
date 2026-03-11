@@ -15,3 +15,14 @@ scenes:
     acts: [部署, 启动, 恢复]
     extra: [重启, 打开可访问页面]
     highlights: [LoRA 训练, 训练集上传和检查, 训练样图, 训练问题分析]
+
+  - skill: windows-local-comfyui-deploy
+    name: Windows 本地 ComfyUI
+    acts: [部署, 启动, 恢复]
+    extra: [重启, 打开本机页面]
+
+  - skill: windows-local-lora-scripts-deploy
+    name: Windows 本地 lora-scripts 训练界面
+    acts: [部署, 启动, 恢复]
+    extra: [重启, 打开本机页面]
+    highlights: [LoRA 训练, 环境复用或创建, 训练问题分析]

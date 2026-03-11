@@ -9,6 +9,7 @@
 - 例如通过 lora-scripts Web API 直接启动训练任务。
 
 ## 当前 skill
+- `windows-conda-sd-env-prepare`
 - `ssh-server-connect`
 - `ssh-hardening-stage`
 - `local-server-state-workspace-init`

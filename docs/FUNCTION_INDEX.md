@@ -16,6 +16,11 @@
 | 部署、启动或恢复 lora-scripts 场景 | `l2/autodl-lora-scripts-deploy-screen` |
 | 判断 lora-scripts Web 平台支持哪些训练家族 | `l2/autodl-lora-scripts-deploy-screen` |
 | 选择 lora-scripts 访问方式（直接给网址 / 只在本机打开 / AutoDL 客户端转发） | `l2/autodl-lora-scripts-deploy-screen` |
+| 部署、启动或恢复 Windows 本地 ComfyUI 场景 | `l2/windows-local-comfyui-deploy` |
+| 部署、启动或恢复 Windows 本地 lora-scripts 场景 | `l2/windows-local-lora-scripts-deploy` |
+| 检查并复用 Windows 本地现有 conda 环境 | `l3/windows-conda-sd-env-prepare` |
+| 为 Windows 本地 ComfyUI 准备 GPU Python 环境 | `l3/windows-conda-sd-env-prepare` |
+| 为 Windows 本地 lora-scripts 准备 GPU Python 环境 | `l3/windows-conda-sd-env-prepare` |
 | 理解 lora-scripts Web 训练参数模板结构 | `l1/lora-scripts-training-schema-structure` |
 | 获取 lora-scripts 小白参数字典 | `l1/lora-scripts-beginner-parameter-playbook` |
 | 按模型给 lora-scripts 起手参数 | `l1/lora-scripts-beginner-parameter-playbook` |

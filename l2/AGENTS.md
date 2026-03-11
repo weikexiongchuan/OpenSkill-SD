@@ -28,3 +28,5 @@
 ## 当前 skill
 - `autodl-comfyui-deploy-screen`
 - `autodl-lora-scripts-deploy-screen`
+- `windows-local-comfyui-deploy`
+- `windows-local-lora-scripts-deploy`

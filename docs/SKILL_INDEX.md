@@ -31,6 +31,9 @@
 | `lora-training-diagnosis-playbook` | `l1` | 需要基于官方资料判断 LoRA 训练为什么失败、为什么没学住、为什么 TensorBoard 没信号，或区分已确认问题与推断风险 | `l2/autodl-lora-scripts-deploy-screen`, `l3/lora-training-analysis` |
 | `autodl-comfyui-deploy-screen` | `l2` | 用户目标是部署、启动、暴露、恢复 ComfyUI | `l3/ssh-server-connect`, `l3/local-server-state-record-update`, `l3/screen-session-manage` |
 | `autodl-lora-scripts-deploy-screen` | `l2` | 用户目标是部署、启动、暴露、恢复 Akegarasu `lora-scripts` 训练 GUI，或判断其 Web 训练能力 | `l1/lora-scripts-training-schema-structure`, `l1/lora-scripts-beginner-parameter-playbook`, `l1/lora-training-diagnosis-playbook`, `l3/lora-basemodel-download`, `l3/lora-training-dataset-prepare`, `l3/lora-training-sample-prompts-prepare`, `l3/lora-training-analysis`, `l3/lora-scripts-api-training-task`, `l3/lora-training-state-record-update`, `l3/ssh-server-connect`, `l3/local-server-state-record-update`, `l3/screen-session-manage` |
+| `windows-local-comfyui-deploy` | `l2` | 用户目标是在 Windows 本地部署、启动、恢复 ComfyUI，而不是在 AutoDL 远端执行 | `l3/windows-conda-sd-env-prepare` |
+| `windows-local-lora-scripts-deploy` | `l2` | 用户目标是在 Windows 本地部署、启动、恢复 Akegarasu `lora-scripts` 训练 GUI，或判断本地训练 GUI 所需环境 | `l1/lora-scripts-training-schema-structure`, `l1/lora-scripts-beginner-parameter-playbook`, `l1/lora-training-diagnosis-playbook`, `l3/windows-conda-sd-env-prepare`, `l3/lora-scripts-api-training-task`, `l3/lora-training-analysis` |
+| `windows-conda-sd-env-prepare` | `l3` | 需要在 Windows 本地检查、复用或新建 ComfyUI / lora-scripts 所需 conda 环境，并给出 GPU Torch 安装命令 | - |
 | `ssh-server-connect` | `l3` | 需要建立 SSH 连通性、补公钥、密码回退执行、验证 key 登录 | `l1/autodl-local-server-state-workspace` |
 | `ssh-hardening-stage` | `l3` | 需要在 key 登录验证后做 staged SSH hardening | `l3/ssh-server-connect` |
 | `local-server-state-workspace-init` | `l3` | 需要创建本地 server-state workspace 骨架和默认 markdown 文件 | `l1/autodl-local-server-state-workspace` |
