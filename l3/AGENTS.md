@@ -10,6 +10,7 @@
 
 ## 当前 skill
 - `windows-conda-sd-env-prepare`
+- `windows-local-model-download`
 - `ssh-server-connect`
 - `ssh-hardening-stage`
 - `local-server-state-workspace-init`

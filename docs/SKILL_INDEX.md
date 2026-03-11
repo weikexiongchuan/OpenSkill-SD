@@ -34,6 +34,7 @@
 | `windows-local-comfyui-deploy` | `l2` | 用户目标是在 Windows 本地部署、启动、恢复 ComfyUI，而不是在 AutoDL 远端执行 | `l3/windows-conda-sd-env-prepare` |
 | `windows-local-lora-scripts-deploy` | `l2` | 用户目标是在 Windows 本地部署、启动、恢复 Akegarasu `lora-scripts` 训练 GUI，或判断本地训练 GUI 所需环境 | `l1/lora-scripts-training-schema-structure`, `l1/lora-scripts-beginner-parameter-playbook`, `l1/lora-training-diagnosis-playbook`, `l3/windows-conda-sd-env-prepare`, `l3/lora-scripts-api-training-task`, `l3/lora-training-analysis` |
 | `windows-conda-sd-env-prepare` | `l3` | 需要在 Windows 本地检查、复用或新建 ComfyUI / lora-scripts 所需 conda 环境，并给出 GPU Torch 安装命令 | - |
+| `windows-local-model-download` | `l3` | 需要在 Windows 本地断点续传下载大型模型文件，支持 HuggingFace 镜像或 Civitai 直链，并把文件硬链接到 ComfyUI 或 lora-scripts 目录 | `l3/lora-basemodel-download` |
 | `ssh-server-connect` | `l3` | 需要建立 SSH 连通性、补公钥、密码回退执行、验证 key 登录 | `l1/autodl-local-server-state-workspace` |
 | `ssh-hardening-stage` | `l3` | 需要在 key 登录验证后做 staged SSH hardening | `l3/ssh-server-connect` |
 | `local-server-state-workspace-init` | `l3` | 需要创建本地 server-state workspace 骨架和默认 markdown 文件 | `l1/autodl-local-server-state-workspace` |

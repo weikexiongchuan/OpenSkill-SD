@@ -28,6 +28,7 @@ Handle the end-to-end ComfyUI deployment scenario on a local Windows machine.
 - Keep ComfyUI in its own Python environment instead of sharing one with `lora-scripts`, because their `transformers` requirements can diverge.
 - Install or update only when needed.
 - Start, stop, restart, and health-check the local service.
+- When the user asks which first checkpoint to download right after ComfyUI becomes usable, prefer one `WAI`-prefixed Illustrious checkpoint before broader family comparison.
 - Report one usable local URL, one env choice, and one log path.
 
 ## Typical Inputs
@@ -43,6 +44,7 @@ Handle the end-to-end ComfyUI deployment scenario on a local Windows machine.
 
 ## Compose With
 - `l3/windows-conda-sd-env-prepare`
+- `l3/windows-local-model-download`
 
 ## Route
 - Start here when the request is broadly “在 Windows 本地部署 ComfyUI”, “帮我启动本地 ComfyUI”, “恢复本地 ComfyUI”.

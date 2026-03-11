@@ -37,6 +37,7 @@ Resolve one supported base-model slot into an exact remote-server download plan 
 - Use this skill when the user chooses the download-script branch instead of manual upload.
 - Use `l3/ssh-server-connect` when the exact remote command must be executed on the server.
 - This skill is remote-server only; if remote download is too slow, fall back to local predownload plus upload into AutoDL 文件存储.
+- When that fallback should be executed on a Windows local machine, switch to `l3/windows-local-model-download`.
 - If the user needs help for that fallback, provide download guidance and transfer/upload guidance.
 - If the user has no VPN and the source file is hard to obtain, tell them they can contact the script author or the community for a usable source file.
 - Do not encapsulate proxy parameters in this skill; keep proxy handling outside this skill.

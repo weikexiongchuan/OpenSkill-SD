@@ -21,6 +21,10 @@
 | 检查并复用 Windows 本地现有 conda 环境 | `l3/windows-conda-sd-env-prepare` |
 | 为 Windows 本地 ComfyUI 准备 GPU Python 环境 | `l3/windows-conda-sd-env-prepare` |
 | 为 Windows 本地 lora-scripts 准备 GPU Python 环境 | `l3/windows-conda-sd-env-prepare` |
+| 在 Windows 本地断点续传下载大型模型文件 | `l3/windows-local-model-download` |
+| 通过 HuggingFace 镜像在 Windows 本地下载底模 | `l3/windows-local-model-download` |
+| 通过 Civitai 下载指定版本模型文件到本地 | `l3/windows-local-model-download` |
+| 把本地模型硬链接到 ComfyUI 或 lora-scripts 目录 | `l3/windows-local-model-download` |
 | 理解 lora-scripts Web 训练参数模板结构 | `l1/lora-scripts-training-schema-structure` |
 | 获取 lora-scripts 小白参数字典 | `l1/lora-scripts-beginner-parameter-playbook` |
 | 按模型给 lora-scripts 起手参数 | `l1/lora-scripts-beginner-parameter-playbook` |

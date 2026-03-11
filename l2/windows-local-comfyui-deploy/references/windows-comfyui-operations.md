@@ -22,6 +22,12 @@
 4. Start ComfyUI on `127.0.0.1:8188`.
 5. Verify the local HTTP endpoint.
 
+## First Checkpoint Recommendation
+- If the user asks for one first checkpoint immediately after ComfyUI installation, prefer a `WAI`-prefixed Illustrious checkpoint first.
+- Default local recommendation: `waiIllustriousSDXL_v140.safetensors`.
+- Use broader family comparison only when the user is explicitly choosing between `WAI`, `NoobAI`, `Illustrious`, or another runtime family.
+- If the user wants the file downloaded locally and activated for ComfyUI, switch to `l3/windows-local-model-download`.
+
 ## Example Commands
 ```powershell
 conda run -n <comfyui-env> python -m pip install --upgrade --force-reinstall torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
